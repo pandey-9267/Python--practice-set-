@@ -78,12 +78,22 @@
 
 # WAP to find the greatest of 3 no. entered by the user
 
-num_1 = float(input("Enter your num_1: "))
-num_2 = float(input("Enter you num_2: "))
-num_3 = float(input("Enter your num_3: "))
-if (num_1 > num_2 and num_1 > num_3):
-    print("num_1 is greatest")
-elif (num_2 > num_3 and num_2 > num_3):
-    print("num_2 is greatest")
+# num_1 = float(input("Enter your num_1: "))
+# num_2 = float(input("Enter you num_2: "))
+# num_3 = float(input("Enter your num_3: "))
+# if (num_1 > num_2 and num_1 > num_3):
+#     print("num_1 is greatest")
+# elif (num_2 > num_3 and num_2 > num_3):
+#     print("num_2 is greatest")
+# else:
+#     print("num_3 is greatest")
+
+# --------------------------------------------------------
+
+# WAP to check if a no. is a multiple of 7 or not 
+
+num = float(input("Enter your no. : "))
+if (num % 7 == 0):
+    print("Entered no. is a multiple of 7")
 else:
-    print("num_3 is greatest")
+    print("Entered no. is not the multiple of 7")
