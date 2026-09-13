@@ -52,13 +52,38 @@
 
 # ------------------------------------------------------
 
-# WAP to find who can drive or not
+# WAP to find who can drive or not (use nested)
 
-age = 11
-if (age >= 18):
-    if(age >= 80):
-        print("Cannot drive")
-    else:
-        print("Can drive")
+# age = 11
+# if (age >= 18):
+#     if(age >= 80):
+#         print("Cannot drive")
+#     else:
+#         print("Can drive")
+# else:
+#     print("Cannot drive")
+
+# -----------------------------------------------------------
+
+# Write the program to check if a number entered by the user is odd or even
+
+# num = int(input("Enter your no: "))
+# rem = num%2
+# if (rem == 0):
+#     print("Entered no. is: even")
+# else:
+#     print("Entered no. is: odd")
+
+# --------------------------------------------------------------
+
+# WAP to find the greatest of 3 no. entered by the user
+
+num_1 = float(input("Enter your num_1: "))
+num_2 = float(input("Enter you num_2: "))
+num_3 = float(input("Enter your num_3: "))
+if (num_1 > num_2 and num_1 > num_3):
+    print("num_1 is greatest")
+elif (num_2 > num_3 and num_2 > num_3):
+    print("num_2 is greatest")
 else:
-    print("Cannot drive")
+    print("num_3 is greatest")
