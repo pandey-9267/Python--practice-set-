@@ -81,9 +81,9 @@
 # num_1 = float(input("Enter your num_1: "))
 # num_2 = float(input("Enter you num_2: "))
 # num_3 = float(input("Enter your num_3: "))
-# if (num_1 > num_2 and num_1 > num_3):
+# if (num_1 >= num_2 and num_1 >= num_3):
 #     print("num_1 is greatest")
-# elif (num_2 > num_3 and num_2 > num_3):
+# elif (num_2 >= num_3 and num_2 >= num_3):
 #     print("num_2 is greatest")
 # else:
 #     print("num_3 is greatest")
