@@ -40,12 +40,25 @@
 
 # WAP to find grade students based on marks
 
-marks = float(input("Enter you marks : "))
-if (marks >= 90):
-    print("Your grade is A")
-elif (marks >= 80):
-    print( "Your grade is B")
-elif (marks >= 70):
-    print("Your grade is C")
+# marks = float(input("Enter you marks : "))
+# if (marks >= 90):
+#     print("Your grade is A")
+# elif (marks >= 80):
+#     print( "Your grade is B")
+# elif (marks >= 70):
+#     print("Your grade is C")
+# else:
+#     print("Your grade is D")
+
+# ------------------------------------------------------
+
+# WAP to find who can drive or not
+
+age = 11
+if (age >= 18):
+    if(age >= 80):
+        print("Cannot drive")
+    else:
+        print("Can drive")
 else:
-    print("Your grade is D")
+    print("Cannot drive")
