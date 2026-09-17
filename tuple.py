@@ -3,3 +3,12 @@
 
 # grade = ("C", "D", "A", "A", "B", "B", "A")
 # print(grade.count("A"))
+
+# ---------------------------------------------------
+
+# Store the values in a list and sort them from "A" to "D"
+# ["C", "D", "A", "A", "B", "B", "A"]
+
+list = ["C", "D", "A", "A", "B", "B", "A"]
+list.sort()
+print(list)
