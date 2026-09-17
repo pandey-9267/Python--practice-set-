@@ -1,102 +1,113 @@
-# dict = {
-#     "name" : "abhi",
-#     "cgpa" : 7.1,
-#     "marks" : [80, 98, 78]
-# }
-# print(dict)
+# # dict = {
+# #     "name" : "abhi",
+# #     "cgpa" : 7.1,
+# #     "marks" : [80, 98, 78]
+# # }
+# # print(dict)
 
-# # accessong the key in dict
+# # # accessong the key in dict
 
-# print(dict["name"])
+# # print(dict["name"])
 
-# # for repalcing the value 
+# # # for repalcing the value 
 
-# dict["name"] = "Abhishek"
-# print(dict)
+# # dict["name"] = "Abhishek"
+# # print(dict)
 
-# # also add a new key vlaue 
+# # # also add a new key vlaue 
 
-# dict["surname"] = "pandey"
-# print(dict)
+# # dict["surname"] = "pandey"
+# # print(dict)
 
-# # how to add key value in a empty or null dict
+# # # how to add key value in a empty or null dict
 
-# null_dict = {}
-# null_dict["name"] = "Anush"
-# print(null_dict)
+# # null_dict = {}
+# # null_dict["name"] = "Anush"
+# # print(null_dict)
 
-# How nested dictionay work
+# # How nested dictionay work
 
+# # students = {
+# #     "Name" : "Rahul",
+# #     "Subjects" : {
+# #         "chem" : 88,
+# #         "Phy" : 98,
+# #         "Pyhton" : 100
+# #     }
+# # }
+
+# # print(students)
+# # print(students["Subjects"])
+# # print(students["Subjects"] ["Pyhton"])
+
+# # METHODS
 # students = {
-#     "Name" : "Rahul",
-#     "Subjects" : {
-#         "chem" : 88,
-#         "Phy" : 98,
-#         "Pyhton" : 100
-#     }
-# }
+#       "Name" : "Rahul",
+#       "Subjects" : {
+#           "chem" : 88,
+#           "Phy" : 98,
+#           "Pyhton" : 100
+#       }
+#   }
 
-# print(students)
-# print(students["Subjects"])
-# print(students["Subjects"] ["Pyhton"])
+# # this return all the keys 
 
-# METHODS
-students = {
-      "Name" : "Rahul",
-      "Subjects" : {
-          "chem" : 88,
-          "Phy" : 98,
-          "Pyhton" : 100
-      }
-  }
+# print(students.keys())
 
-# this return all the keys 
+# # this convert in to list or anything you want do like this 
 
-print(students.keys())
+# print(list(students))
+# print(tuple(students))
 
-# this convert in to list or anything you want do like this 
+# # this return all the values 
 
-print(list(students))
-print(tuple(students))
+# print(students.values())
 
-# this return all the values 
+# # this return the length of the dict 
 
-print(students.values())
+# print(len(students))
 
-# this return the length of the dict 
+# # this return all the key value pairs in the tuple
 
-print(len(students))
+# # print(students.items())
 
-# this return all the key value pairs in the tuple
+# # and if want to access the single tuple from the above 
 
-# print(students.items())
+# pairs = list(students.items())
+# print(pairs[0])
 
-# and if want to access the single tuple from the above 
+# # retuen the kay according to the value
+# # there are two ways 
 
-pairs = list(students.items())
-print(pairs[0])
+# # print(students["Name"])  
 
-# retuen the kay according to the value
-# there are two ways 
-
-# print(students["Name"])  
-
-# this way give an    error  this is not not bcoz after error other lines of code which is correct that also not run 
-# print(students["name2"]) 
+# # this way give an    error  this is not not bcoz after error other lines of code which is correct that also not run 
+# # print(students["name2"]) 
 
 
-print(students.get("Name"))
+# print(students.get("Name"))
 
-# # this way did not give erroe is give   none but here the runs the all line 
-print(students.get("name2"))
+# # # this way did not give erroe is give   none but here the runs the all line 
+# print(students.get("name2"))
 
-# update the dict 
+# # update the dict 
 
-# students.update({"city" : "Delhi"})
+# # students.update({"city" : "Delhi"})
+# # print(students)
+
+# # also do like this 
+
+# new_dict = {"city" : "Delhi"}
+# students.update(new_dict)
 # print(students)
 
-# also do like this 
+# ---------------------------------------------
 
-new_dict = {"city" : "Delhi"}
-students.update(new_dict)
-print(students)
+# Store following word meanings in a python dictionary
+# table : "a piece of furniture", "list of facts & figures"cat : "a small animal"
+
+things = {
+    "table" : ["a piece of furniture", "list of facts & fiures"],
+    "cat" : "a small animal"
+}
+print(things)
