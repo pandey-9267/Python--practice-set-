@@ -106,8 +106,21 @@
 # Store following word meanings in a python dictionary
 # table : "a piece of furniture", "list of facts & figures"cat : "a small animal"
 
-things = {
-    "table" : ["a piece of furniture", "list of facts & fiures"],
-    "cat" : "a small animal"
-}
-print(things)
+# things = {
+#     "table" : ["a piece of furniture", "list of facts & fiures"],
+#     "cat" : "a small animal"
+# }
+# print(things)
+
+# -----------------------------------------------------------------------
+
+# WAP to enter marks of 3 subjects from the user and store them in a dictionary. Start with an empty dictionary & add one by one. Use subject name as key & marks as value
+
+marks = {}
+sub_1 = float(input("Enter your phys marks : "))
+marks.update({"phys" : sub_1})
+sub_2 = float(input("Enter your chems marks : "))
+marks.update({"chems" : sub_2})
+sub_3 = float(input("Enter your maths marks : "))
+marks.update({"maths" : sub_3})
+print(marks)
