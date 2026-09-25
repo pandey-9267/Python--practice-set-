@@ -112,10 +112,41 @@
 # Search for a number X in the tuple using for loop
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
-x = 25
-idx = 0
-for find in nums:
-   idx += 1
-   if find == x:
-    print("Number x found at index", idx)
+# nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+# x = 25
+# idx = 0
+# for find in nums:
+#    idx += 1
+#    if find == x:
+#     print("Number x found at index", idx)
+
+# ---------------------------------------------------------------------------------------------
+
+# basics of Range 
+
+# range(start, stop, step)
+
+# for el in range(5):
+#   print(el)
+
+# --------------------------------------
+
+# Print number from 1 to 100
+
+# for num in range(101):
+#   print(num)
+
+# -------------------------------------------
+
+# Print number from 100 to 1
+
+# for rev in range(100, 0, -1):
+#   print(rev)
+
+# -----------------------------------------------
+
+# Print the multipliction tableof n
+
+# n = int(input("Enter yout num. : "))
+# for table in range(1,11):
+#   print(n, "*", table, "=", n*table)
