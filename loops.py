@@ -70,14 +70,52 @@
 # Search for a number x in this tuple using loop
 # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-x = 36
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# x = 36
 
-i = 0
-while i < len(nums):
-    if nums[i] == x:
-        print("Founded", i)
-        break
-    else: 
-      print("Finding...")
-    i += 1
+# i = 0
+# while i < len(nums):
+#     if nums[i] == x:
+#         print("Founded", i)
+#         break
+#     else: 
+#       print("Finding...")
+#     i += 1
+
+# --------------------------------------------------------------------------------------
+
+# basics of for loop
+
+# list = [1, 2, 3]
+# for el in list:
+#   print(el)
+
+# for loop with else 
+
+# list = [1,2,5,8]
+# for ele in list:
+#   print(ele)
+# else:
+#   print("End")  # this is optional , it only works when the loop is end 
+
+# ------------------------------------------------
+
+# Print the element of the following list using a for Loop
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# for val in nums:
+#   print(val)
+
+# -------------------------------------------------
+
+# Search for a number X in the tuple using for loop
+# [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+x = 25
+idx = 0
+for find in nums:
+   idx += 1
+   if find == x:
+    print("Number x found at index", idx)
