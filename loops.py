@@ -82,6 +82,20 @@
 #       print("Finding...")
 #     i += 1
 
+# ---------------------------------------------------
+
+# WAP to find the sum of first n natural numbers 
+
+n =  int(input("Enter you number: "))
+i = 1
+total_sum = 0
+while i <= n:
+  total_sum += i
+  i += 1
+print(f"The sum of the first {n} natural number is : {total_sum}")
+
+
+
 # --------------------------------------------------------------------------------------
 
 # basics of for loop
