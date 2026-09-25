@@ -90,3 +90,27 @@
 #     # return num
     
 # check_even_or_odd(num)
+
+# -------------------------------------------------------
+
+# basics of recursion
+
+# print n to 1  backward
+
+# def show(n):
+#     if (n == 0):
+#         return
+#     print(n)
+#     show(n-1)
+
+# show(5)
+
+# return n! 
+
+# def fact(n):
+#     if (n == 0 or n == 1):
+#         return 1
+#     else:
+#         return n * fact(n-1)
+
+# print(fact(6))
