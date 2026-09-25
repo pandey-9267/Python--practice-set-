@@ -86,13 +86,13 @@
 
 # WAP to find the sum of first n natural numbers 
 
-n =  int(input("Enter you number: "))
-i = 1
-total_sum = 0
-while i <= n:
-  total_sum += i
-  i += 1
-print(f"The sum of the first {n} natural number is : {total_sum}")
+# n =  int(input("Enter you number: "))
+# i = 1
+# total_sum = 0
+# while i <= n:
+#   total_sum += i
+#   i += 1
+# print(f"The sum of the first {n} natural number is : {total_sum}")
 
 
 
@@ -164,3 +164,13 @@ print(f"The sum of the first {n} natural number is : {total_sum}")
 # n = int(input("Enter yout num. : "))
 # for table in range(1,11):
 #   print(n, "*", table, "=", n*table)
+
+# -------------------------------------------------
+
+# WAP to finf the frctorial of first n numbers
+
+# n = int(input("Enter you no. : "))
+# fact = 1
+# for i in range (1, n+1):
+#   fact *= i
+# print("Factorial = ", fact)
