@@ -119,26 +119,40 @@
 
 # Write a recursion function to calculate the sum of first n natural numbers 
 
-# def calc_sum(n):
-#     if (n == 0):
-#         return 0
-#     return calc_sum(n-1) + n
+def calc_sum(n):
+    if (n == 0):
+        return 0
+    return n + calc_sum(n-1)
 
-# print(calc_sum(5))
+print(calc_sum(5))
+
+# Step-by-Step Breakdown for calc_sum(5)
+# calc_sum(5) calls 5 + calc_sum(4)
+# calc_sum(4) calls 4 + calc_sum(3)
+# calc_sum(3) calls 3 + calc_sum(2)
+# calc_sum(2) calls 2 + calc_sum(1)
+# calc_sum(1) calls 1 + calc_sum(0)
+# calc_sum(0) hits the base case and returns 0
+# Now the values unwind and add up:
+# calc_sum(1) returns 1 + 0 = 1
+# calc_sum(2) returns 2 + 1 = 3
+# calc_sum(3) returns 3 + 3 = 6
+# calc_sum(4) returns 4 + 6 = 10
+# calc_sum(5) returns 5 + 10 = 15
 
 # ---------------------------------------------
 
 # Write a recursive function to print all elements in a list.
 # (Hint : use list & index as parameters)
 
-def print_list(list, idx = 0):
-    if (idx == len(list)):
-        return
-    print(list[idx], end = " ")   # end = " " is used for printing the output in the horizontally 
-    print_list(list, idx+1)
+# def print_list(list, idx = 0):
+#     if (idx == len(list)):
+#         return
+#     print(list[idx], end = " ")   # end = " " is used for printing the output in the horizontally 
+#     print_list(list, idx+1)
 
-fruites = ["Apple", "Mango", "Banana", "Pineapple"]
-print_list(fruites)
+# fruites = ["Apple", "Mango", "Banana", "Pineapple"]
+# print_list(fruites)
 
 # how the above code is working step by step 
 
