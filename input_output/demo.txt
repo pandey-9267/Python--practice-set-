@@ -1,0 +1,2 @@
+Hello, I am learning pyhton
+this is the frist step towards the AL/ML

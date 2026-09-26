@@ -1,0 +1,5 @@
+f = open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "r")
+file = f.read()
+print(file)
+print(type(file))
+f.close()
