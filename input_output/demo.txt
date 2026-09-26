@@ -1,2 +1,2 @@
-Hello, I am learning pyhton
-this is the frist step towards the AL/ML
+Leraning how to overwrite in the existing file
+Learing how to append in a file
