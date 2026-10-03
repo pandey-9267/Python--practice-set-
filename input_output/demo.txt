@@ -1,2 +1,1 @@
-Leraning how to overwrite in the existing file
-Learing how to append in a file
+This is the another way of writing in the file

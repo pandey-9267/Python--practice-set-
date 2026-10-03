@@ -26,12 +26,23 @@
 
 # How to write in a file
 
-overwrite_in_file = open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "w")
-overwrite_in_file.write("Leraning how to overwrite in the existing file")  # overwrites the entrie file
-overwrite_in_file.close()
+# overwrite_in_file = open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "w")
+# overwrite_in_file.write("Leraning how to overwrite in the existing file")  # overwrites the entrie file
+# overwrite_in_file.close()
 
 # How to add a line in the existing file without overwrites
 
-add_in_file = open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "a")
-add_in_file.write("\nLearing how to append in a file")
-add_in_file.close()
+# add_in_file = open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "a")
+# add_in_file.write("\nLearing how to append in a file")
+# add_in_file.close()
+
+# Another syntax for these opertion 
+
+# this only write the data from the file 
+with open ("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "r") as f:
+    data = f.read()
+    print(data)
+
+# by this the exsiting data of the file completely remove and show only which is written below 
+with open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "w") as f:
+    f.write("This is the another way of writing in the file")     
