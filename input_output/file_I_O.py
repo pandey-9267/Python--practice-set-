@@ -39,10 +39,17 @@
 # Another syntax for these opertion 
 
 # this only write the data from the file 
-with open ("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "r") as f:
-    data = f.read()
-    print(data)
+
+# with open ("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "r") as f:
+#     data = f.read()
+#     print(data)
 
 # by this the exsiting data of the file completely remove and show only which is written below 
-with open("D:\\AIML(practice set)\\Python(practice set)\\input_output\\demo.txt", "w") as f:
-    f.write("This is the another way of writing in the file")     
+
+# with open("D:\AIML(practice set)\Python(practice set)\input_output\demo.txt", "w") as f:
+#     f.write("This is the another way of writing in the file")     
+
+# for removing a file or deleting the file we have to use import 
+
+# import os
+# os.remove("D:\AIML(practice set)\Python(practice set)\input_output\sample.txt")
