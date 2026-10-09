@@ -56,3 +56,79 @@
 # acc1.credit(2500)
 # acc1.credit(40000)
 # acc1.debit(15000)
+
+# What is Inheritance?
+
+# Inheritance allows a child class to reuse and extend the functionality of a parent class.
+
+# There are 3 types of inheritance
+# 1. Single inheritance
+# 2. Multi-line inheritance
+# 3. Mutiple inheritance
+
+# Example : single inheritance (Single inheritance means one child class inherits from one parent class.)
+
+# class Car:
+
+#     color = "Black"
+
+#     @staticmethod
+#     def start ():
+#         print("Car started...")
+
+#     @staticmethod
+#     def stop ():
+#         print("Car stoped")
+
+# class ToyotaCar (Car):
+
+#     def __init__(self,name):
+#         self.name = name
+
+# car1  = ToyotaCar("Fortuner")
+# print(car1.color)
+# car1.start()
+# car1.stop()
+
+# Example : Multi-line inheritance (In multilevel inheritance, a class inherits from another child class, forming a chain.)
+
+# class Car:
+
+#     @staticmethod
+#     def start ():
+#         print("Car started...")
+
+#     @staticmethod
+#     def stop ():
+#         print("Car stoped")
+
+# class ToyotaCar (Car):
+
+#     def __init__(self,name):
+#         self.name = name
+
+# class Fortuner(ToyotaCar):
+#     def __init__(self, type):
+#         self.type = type
+
+# car1 = Fortuner("Disel")
+# car1.start()
+# car1.stop()
+
+# Example : Multiple inheritance (In multiple inheritance, one child class inherits from two or more parent classes.)
+
+# class A:
+#     valA = "Welcome to Class A"
+
+
+# class B:
+#     valB = "Welcome to Class B"
+
+
+# class C(A, B):
+#     valC = "Welcome to Class C"
+
+# c1 = C()
+# print(c1.valC)
+# print(c1.valB)
+# print(c1.valA)
