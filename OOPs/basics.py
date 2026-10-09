@@ -80,3 +80,15 @@
 
 # s1 = Students("Abhishek", [95, 95, 80])
 # s1.avg_of_stu()
+
+# How to delete the object property or object itself
+
+# class Name:
+
+#     def __init__ (self, name):
+#         self.name = name
+
+# s1 = Name("Abhishek")
+# print(s1.name)   # here this print the name 
+# del s1.name      # it did not print the name bcoz we delete the object property
+# del s1          # and here we deleted the whole object 
