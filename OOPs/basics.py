@@ -98,25 +98,51 @@
 # In Python, private attributes and methods are used to restrict
 # access to certain parts of a class from outside the class itself
 
-class Stud:
-    def __init__(self):
-        self.__marks = 90  # Private variable
+# class Stud:
+#     def __init__(self):
+#         self.__marks = 90  # Private variable
 
-s = Stud()
-print(s.__marks)  # Error
+# s = Stud()
+# print(s.__marks)  # Error
 
 # Remember: In Python, double underscores (__) trigger name mangling
 #  they do not make attributes strictly inaccessible
 
-class Student:
-    def __init__(self):
-        self.__marks = 90  # Private attribute
+# class Student:
+#     def __init__(self):
+#         self.__marks = 90  # Private attribute
 
-    def __show_marks(self):  # Private method
-        print(self.__marks)
+#     def __show_marks(self):  # Private method
+#         print(self.__marks)
 
-    def display(self):  # Public method
-        self.__show_marks()
+#     def display(self):  # Public method
+#         self.__show_marks()
 
-s = Student()
-s.display()  # Output: 90
+# s = Student()
+# s.display()  # Output: 90
+
+# What is super() ?
+# super( ) method is used to access methods of the parent class
+
+# Example
+
+# class Car:
+#     def __init__(self, type):
+#         self.type = type
+
+#     @staticmethod
+#     def start():
+#         print("car started..")
+
+#     @staticmethod
+#     def stop():
+#         print("car stopped.")
+
+# class ToyotaCar(Car):
+#     def __init__(self, name, type):
+#         super().__init__(type)
+#         self.name = name
+#         super().start()
+
+# car1 = ToyotaCar("prius", "electric")
+# print(car1.type)
