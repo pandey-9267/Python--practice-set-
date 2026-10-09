@@ -80,3 +80,24 @@
 
 # s1 = Students("Abhishek", [95, 95, 80])
 # s1.avg_of_stu()
+
+# What is abstration 
+# Abstraction focuses on what an object does, rather than how it does it.
+
+# Example
+
+class Car_abstr:
+
+    def __init__ (self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+
+    def start (self):
+        self.clutch = True
+        self.acc = True
+        print("Car started...")
+
+car1 = Car_abstr()
+car1.start()
+
