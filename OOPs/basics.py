@@ -92,3 +92,31 @@
 # print(s1.name)   # here this print the name 
 # del s1.name      # it did not print the name bcoz we delete the object property
 # del s1          # and here we deleted the whole object 
+
+# what is private and how to implement it 
+
+# In Python, private attributes and methods are used to restrict
+# access to certain parts of a class from outside the class itself
+
+class Stud:
+    def __init__(self):
+        self.__marks = 90  # Private variable
+
+s = Stud()
+print(s.__marks)  # Error
+
+# Remember: In Python, double underscores (__) trigger name mangling
+#  they do not make attributes strictly inaccessible
+
+class Student:
+    def __init__(self):
+        self.__marks = 90  # Private attribute
+
+    def __show_marks(self):  # Private method
+        print(self.__marks)
+
+    def display(self):  # Public method
+        self.__show_marks()
+
+s = Student()
+s.display()  # Output: 90
