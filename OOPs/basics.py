@@ -60,3 +60,23 @@
 # s1.stu_class()
 # s1.stu_section()
 # s1.stu_age()
+
+# --------------------------------------------
+
+# Create a student class that take name and marks of three students as argument in Constructor then create a method to print the average
+
+# class Students:
+
+#     def __init__ (self, name, marks):
+#         self.name = name
+#         self.marks = marks
+
+#     def avg_of_stu(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#             average = sum/3
+#         print(f"The average marks of {self.name} is: {average}")
+
+# s1 = Students("Abhishek", [95, 95, 80])
+# s1.avg_of_stu()
